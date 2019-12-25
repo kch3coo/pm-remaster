@@ -15,7 +15,24 @@ const app = express();
 require("./startup/routes")(app);
 require("./startup/db")();
 
-app.use(express.static(path.resolve(__dirname, "./client/build/index.html")))
+if(process.env.NODE_ENV === 'production'){
+	app.use(express.static('client/build'))
+	app.get('*', (req, res) => {
+		
+		res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+		
+	});
+}
+
+
+console.log("starting the server...");
+const server = createServer(app);
+server.listen(port, () => {
+
+	console.log(`Listening on port ${port}...`);
+});
+
+
 
 /*checker of complexity 4
 if func is a registration function, it'll forward
@@ -25,22 +42,6 @@ const npm_checker = (is_npm, func, mounted) =>
 const wheel = {
 	main: () => {
 
-		if(process.env.NODE_ENV === 'production'){
-			
-			app.get('*', (req, res) => {
-				
-				res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
-				
-			});
-		}
-		
-
-		console.log("starting the server...");
-		const server = createServer(app);
-		server.listen(port, () => {
-
-			console.log(`Listening on port ${port}...`);
-		});
 		
 	}
 };
