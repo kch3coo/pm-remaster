@@ -9,12 +9,15 @@
 		"debug": "node app.js --trace-events-enabled --trace-sync-io --track-heap-objects --report-directory=report-dir",
 		"heroku-postbuild": "cd client && npm install && npm run build"
 	},
+	
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/csc309-fall-2019/team41.git"
 	},
 	"author": "csc309 team",
 	"license": "ISC",
+
+	"cacheDirectories": ["client/node_modules", "node_modules"],
 
 	"dependencies": {
 		"@hapi/joi": "^16.1.8",
