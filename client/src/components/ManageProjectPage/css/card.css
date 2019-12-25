@@ -1,0 +1,15 @@
+.card {
+    width: 100%;
+    height: 100%;    
+}
+
+.card header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    padding-left: 33%;
+}
+
+.card-content {
+    
+}

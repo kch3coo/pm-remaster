@@ -1,0 +1,19 @@
+{
+    "projectId": "asdf3asrdfg30a",
+    "pid": "project ID",
+    "projectName": "Utos",
+    "tid": "team ID",
+    "teamName": "In to the world team",
+    "taskList": [
+      {
+        "taskId": 1,
+        "taskDesc": "CSC309 TA meeting",
+        "taskProcess": 0
+      },
+      {
+        "taskId": 2,
+        "taskDesc": "CSC309 FrontEnd Dev",
+        "taskProcess": 2
+      }
+    ]
+  }

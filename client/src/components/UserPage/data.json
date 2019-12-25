@@ -1,0 +1,49 @@
+{
+    "_id": "default User Id",
+    "icon_img": "url",
+    "name": "UserName",
+    "email": "xxxx@gmail.com",
+    "password":"encodedpassword_0asdfadfawer",
+    "description": "I am an Academic waste",
+    "projects":{
+        "manageProjectList": [
+            {
+                "project_name": "UTOS",
+                "pid": "project_id",
+                "desc": "a project dedicated to developer community in UOFT"
+              },
+              {
+                "project_name": "Linkus",
+                "pid": "project_id",
+                "desc": "A project that allows students to find a assignment partner"
+              },
+              {
+                "project_name": "Linkus1",
+                "pid": "project_id",
+                "desc": "A project that allows students to find a assignment partner"
+              },
+              {
+                "project_name": "Linkus2",
+                "pid": "project_id",
+                "desc": "A project that allows students to find a assignment partner"
+              },
+              {
+                "project_name": "Linkus4",
+                "pid": "project_id",
+                "desc": "A project that allows students to find a assignment partner"
+              }
+        ],
+        "contributeProjectList": [
+            {
+                "project_nam": "CSC309",
+                "pid": "project_id",
+                "desc": "a project dedicated to developer community in UOFT"
+              },
+              {
+                "project_name": "CSC301A1",
+                "pid": "project_id",
+                "desc": "A project that allows students to find a assignment partner"
+              }
+        ]
+    }
+}

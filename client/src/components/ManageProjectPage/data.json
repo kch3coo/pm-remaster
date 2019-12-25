@@ -1,0 +1,26 @@
+{
+    "_id": "default project Id",
+    "name": "projectName",
+    "managers": [
+        {"userId": "uid_1", "userName": "userName1"},
+        {"userId": "uid_2", "userName": "userName2"}
+        ],
+    "teamList": [
+        {"teamName": "Master of html",
+        "contributors": [
+                {"userId": "uid_3", "userName": "John", "taskList":[{ "taskid": 1, "taskName": "John Task 1" }]},
+                {"userId": "uid_4", "userName": "Silvia", "taskList":[{ "taskid": 2, "taskName": "Silvia Task 1" }]},
+                {"userId": "uid_5", "userName": "LKX", "taskList":[{ "taskid": 3, "taskName": "LKX Task 1" }]}
+                ]
+        },{
+            "teamName": "Master of java",
+            "contributors": [
+                    {
+                    "userId": "uid_6", "userName": "Jason", 
+                    "taskList": [
+                        { "taskid": 5, "taskName": "Jason Task 1" },
+                        { "taskid": 6, "taskName": "Jason Task 2" }
+                      ]}
+                    ] 
+        }]
+}

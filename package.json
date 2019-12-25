@@ -1,0 +1,32 @@
+{
+	"name": "team41",
+	"version": "1.0.0",
+	"description": "csc309 team work",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"app": "node app.js --unhandled-rejections=strict --v8-pool-size=20 --zero-fill-buffers NPM_RUN_ENV",
+		"debug": "node app.js --trace-events-enabled --trace-sync-io --track-heap-objects --report-directory=report-dir",
+		"heroku-postbuild": "cd client && npm install && npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/csc309-fall-2019/team41.git"
+	},
+	"author": "csc309 team",
+	"license": "ISC",
+
+	"dependencies": {
+		"@hapi/joi": "^16.1.8",
+		"body-parser": "^1.19.0",
+		"connect-mongo": "^3.2.0",
+		"express": "^4.17.1",
+		"express-session": "^1.17.0",
+		"joi-objectid": "^3.0.1",
+		"lodash": "^4.17.15",
+		"mongoose": "^5.7.12",
+		"nodemon": "^2.0.1",
+		"reactparticles.js": "^1.1.6",
+		"zhihu-particle": "0.0.9"
+	}
+}
