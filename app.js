@@ -15,7 +15,7 @@ const app = express();
 require("./startup/routes")(app);
 require("./startup/db")();
 
-app.use(express.static(path.resolve(__dirname, "client/build/index.html")))
+app.use(express.static(path.resolve(__dirname, "./client/build/index.html")))
 
 /*checker of complexity 4
 if func is a registration function, it'll forward
@@ -29,7 +29,7 @@ const wheel = {
 			
 			app.get('*', (req, res) => {
 				
-				res.sendFile(path.resolve(__dirname, "client/build/index.html"));
+				res.sendFile(path.resolve(__dirname, "./client/build/index.html"));
 				
 			});
 		}
