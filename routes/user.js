@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const ObjectId = require("mongoose").Types.ObjectId;
-const { User, validate } = require("../models/user.js");
-const { Project } = require("../models/project.js");
+const { User, validate } = require("../models/User.js");
+const { Project } = require("../models/Project.js");
 const _ = require("lodash");
 
 router.get("/:id", async (req, res) => {

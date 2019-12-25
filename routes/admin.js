@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const ObjectId = require("mongoose").Types.ObjectId;
-const { User } = require("../models/user");
+const { User } = require("../models/User");
 
 router.get("/users", (req, res) => {
 	console.log("getting all users");

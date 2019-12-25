@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const ObjectId = require("mongoose").Types.ObjectId;
-const { Team, validate } = require("../models/team");
-const { Project, p_valid } = require("../models/project");
-const { User } = require("../models/user");
-const { Task } = require("../models/task");
+const { Team, validate } = require("../models/Team");
+const { Project, p_valid } = require("../models/Project");
+const { User } = require("../models/User");
+const { Task } = require("../models/Task");
 
 router.get("/:id", (req, res) => {
   const teamId = req.params.id;

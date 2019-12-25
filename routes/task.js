@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const ObjectId = require("mongoose").Types.ObjectId;
-const { Task, validate } = require("../models/task");
+const { Task, validate } = require("../models/Task");
 
 //get task by id
 router.get("/:id", (req, res) => {
