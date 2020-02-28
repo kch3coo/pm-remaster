@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, ListGroup, Button} from 'react-bootstrap';
+import { Card, ListGroup} from 'react-bootstrap';
 import CreateTeamForm from './CreateForms/CreateTeamForm';
 import {createTeam} from "../../actions/project";
 

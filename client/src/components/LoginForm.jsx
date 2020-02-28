@@ -1,11 +1,9 @@
 import React from "react";
-import { Redirect } from "react-router";
 import "bootstrap/dist/css/bootstrap.css";
 
 import "../assets/css/login.css";
-import Logo from "../assets/img/logo.png";
 
-import { login, getCurrentUser } from "../actions/user";
+import { login} from "../actions/user";
 
 /* The LoginForm Component */
 class LoginForm extends React.Component {
@@ -20,7 +18,6 @@ class LoginForm extends React.Component {
   };
 
   chooseLogin() {
-    const notused = ""
     let data = {
       name: this.isEmail(this.state.account) ? "" : this.state.account,
       password: this.state.password,
@@ -32,11 +29,6 @@ class LoginForm extends React.Component {
   };
 
   render() {
-    /*getCurrentUser().then((user) => {
-      if(user) {
-      return (<Redirect to='/user' />)
-    } else{console.log("not authorizedd");}
-    });*/
     
     return (
       <div className="myLogin">

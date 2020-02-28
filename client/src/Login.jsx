@@ -4,8 +4,9 @@ import LoginNavbar from "./components/Navbar/LoginNavbar";
 import LoginForm from "./components/LoginForm";
 import { Helmet } from "react-helmet";
 import profilePicture from "./assets/img/profilepic.png";
-import Particles from "reactparticles.js";
+import Particles from 'react-particles-js';
 
+import logo from "../src/assets/img/lmj-logo.png";
 class Login extends React.Component {
   render() {
     console.log("signing up!");
@@ -16,14 +17,10 @@ class Login extends React.Component {
           <meta name="Login Page" />
         </Helmet>
         <div>
-          <Particles id="tile1" />
-          <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossOrigin="anonymous"
-          />
+          
+
           <LoginNavbar />
+         
           <LoginForm />
         </div>
       </div>

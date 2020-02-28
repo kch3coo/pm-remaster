@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "./DisplayUserInfo.css";
 import TypingEffect from "../TypingEffect/TypingEffect";
 export default class DisplayUserInfo extends Component {
-    constructor(props) {
-        super(props);
-      }
   render() {
     return (
       <div> 

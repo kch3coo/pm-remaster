@@ -1,9 +1,8 @@
 import React from "react";
 import "./assets/css/projectPage.css";
 import LoginNavbar from "./components/Navbar/LoginNavbar";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import {Container } from "react-bootstrap";
 import ProjectSection from "./components/ManageProjectPage/ProjectSection";
-import Particles from "reactparticles.js";
 import "./components/ManageProjectPage/css/projectPage.css";
 import {getProjectInfo} from "./actions/project";
 class ProjectPage extends React.Component {
@@ -43,7 +42,6 @@ class ProjectPage extends React.Component {
   render() {
     return (
       <div className="mission-panel">
-        <Particles id="tile1" />
         <LoginNavbar />
 
         <h1 className="mt-3 ml-3 text-white">{this.state.projectName}</h1>

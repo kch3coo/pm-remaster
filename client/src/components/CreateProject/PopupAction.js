@@ -8,9 +8,6 @@ import React, { Component } from 'react'
 
 export default class PopupAction extends Component {
     state = {showModal: false};
-    constructor(props) {
-      super(props);
-    }
     getInitialState() {
         return { showModal: false };
       }

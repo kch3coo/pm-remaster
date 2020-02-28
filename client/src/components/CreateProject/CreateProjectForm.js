@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { createProject } from "../../actions/project";
 import { Redirect } from "react-router-dom";

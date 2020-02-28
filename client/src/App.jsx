@@ -1,5 +1,4 @@
 import React from "react";
-import { Redirect } from "react-router";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 

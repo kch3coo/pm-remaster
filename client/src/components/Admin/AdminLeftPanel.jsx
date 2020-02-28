@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Redirect } from "react-router-dom";
 
 class LeftPanel extends Component {
 	state = {

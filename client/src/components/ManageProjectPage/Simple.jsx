@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Draggable } from "react-smooth-dnd";
-import { applyDrag, generateItems } from "../../utils/Drag";
+import { applyDrag } from "../../utils/Drag";
 import { Button } from "react-bootstrap";
 import TaskPopupAction from "./CreateForms/TaskPopupAction";
 import { createTask } from "../../actions/project";
