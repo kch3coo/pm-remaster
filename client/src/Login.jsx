@@ -4,7 +4,7 @@ import LoginNavbar from "./components/Navbar/LoginNavbar";
 import LoginForm from "./components/LoginForm";
 import { Helmet } from "react-helmet";
 import profilePicture from "./assets/img/profilepic.png";
-import Particles from 'react-particles-js';
+import Particles from "react-particles-js";
 
 import logo from "../src/assets/img/lmj-logo.png";
 class Login extends React.Component {
@@ -17,11 +17,11 @@ class Login extends React.Component {
           <meta name="Login Page" />
         </Helmet>
         <div>
-          
-
           <LoginNavbar />
-         
-          <LoginForm />
+
+          <div className="mt-5">
+            <LoginForm />
+          </div>
         </div>
       </div>
     );
