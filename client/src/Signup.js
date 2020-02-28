@@ -55,7 +55,7 @@ class Signup extends React.Component {
                       name="password"
                       className="form-control my-input"
                       id="password"
-                      placeholder="password"
+                      placeholder="Password"
                     />
                   </div>
                 </form>
