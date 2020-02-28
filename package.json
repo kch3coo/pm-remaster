@@ -7,7 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"start": "node app.js --unhandled-rejections=strict --v8-pool-size=20 --zero-fill-buffers NPM_RUN_ENV",
 		"debug": "node app.js --trace-events-enabled --trace-sync-io --track-heap-objects --report-directory=report-dir",
-		"heroku-postbuild": "cd client && npm install && npm run build"
+		"heroku-postbuild": "npm start && cd client && npm install && npm run build"
 	},
 	"repository": {
 		"type": "git",
