@@ -37,7 +37,7 @@ export default class DisplayProjects extends Component {
     return lis.map((project, index) => {
       return (
         <div key={index}>
-          <Card style={{ width: "18rem" }}>
+          <Card style={{ width: "100%" }}>
             <Card.Img variant="top" src="default_project_bg1.jpg" />
             <Card.Body>
               <Card.Title>{project.name}</Card.Title>
